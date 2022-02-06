@@ -9,9 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @CrossOrigin("*")
 public class StaircasesController {
 	long [][] dp = new long[501][501];
-    int minValue = 5;
-    int maxValue = 500;
-	
+    	
 
     @GetMapping("/result")
     public long Staircases1017(@RequestParam(name = "number", required = true) int number){
